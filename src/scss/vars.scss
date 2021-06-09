@@ -1,0 +1,31 @@
+$primary-text-color: #9bc401;
+$secondary-text-color: #657f04;
+$accent-text-color: #ffffff;
+$header-accent-color: #cb9c47;
+$btn-bg-color: rgb(203, 156, 71);
+$primary-bg-color: #f1f5e2;
+$secondary-bg-color: #e1f8e1;
+$form-bg-color: #1f3521;
+$header-bg-color: #ff0202;
+$warn-color: #faef87;
+$smoothly: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$facebook-color: rgb(9, 9, 121);
+$insta-color: rgb(131, 58, 180);
+$insta-gradient: linear-gradient(
+  0deg,
+  rgba(131, 58, 180, 1) 0%,
+  rgba(253, 29, 29, 1) 38%,
+  rgba(253, 50, 35, 1) 64%,
+  rgba(252, 176, 69, 1) 100%
+);
+$fb-gradient: linear-gradient(
+  0deg,
+  rgba(9, 9, 121, 1) 7%,
+  rgba(0, 212, 255, 1) 100%
+);
+$btn-gradient: linear-gradient(
+  0deg,
+  rgba(203, 156, 71, 1) 34%,
+  rgba(253, 187, 45, 1) 75%
+);
+$transition: opacity 0.3s ease;

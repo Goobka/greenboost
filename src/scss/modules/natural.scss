@@ -1,0 +1,12 @@
+.natural {
+  font-size: 3rem;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
+  background-image: url(../../img/natural.png);
+  background-size: cover;
+  &__title {
+    font-weight: bold;
+    margin-bottom: 70px;
+  }
+}

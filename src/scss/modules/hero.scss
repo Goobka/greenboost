@@ -1,0 +1,119 @@
+.hero {
+  background-color: $primary-bg-color;
+  @include for-size(desktop) {
+    background-image: url(../../img/hero-bg.png);
+    @include bcg(contain, no-repeat);
+    background-position: center;
+  }
+  &__img {
+    @include for-size(desktop) {
+      display: none;
+    }
+  }
+  &__container {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    @include for-size(desktop) {
+      display: flex;
+      justify-content: space-between;
+      text-align: unset;
+    }
+  }
+  &__title {
+    font-size: 5rem;
+    font-weight: bold;
+    color: $primary-text-color;
+    text-transform: uppercase;
+    & span {
+      color: $header-accent-color;
+    }
+  }
+  &__info {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+  }
+  &__content {
+    @include for-size(desktop) {
+      width: 50%;
+    }
+  }
+  &__form {
+    display: none;
+    @include for-size(desktop) {
+      display: block;
+      max-width: 30%;
+      background-color: $form-bg-color;
+      background-image: url(../../img/triangle.png);
+      background-repeat: no-repeat;
+      background-size: 160%;
+      background-position: left 50% top -20%;
+      padding: 0 20px 30px;
+      text-align: center;
+    }
+  }
+}
+
+.logo {
+  margin-bottom: 35px;
+  &__img {
+    width: 300px;
+  }
+}
+
+.assets {
+  &__item {
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 5px;
+    color: $secondary-text-color;
+    &::before {
+      content: url(../../img/check.png);
+    }
+    &--leaf::before {
+      content: url(../../img/leaf.png);
+    }
+  }
+  &__text {
+    font-size: 1.5rem;
+  }
+}
+
+// @media screen and (min-device-pixel-ratio: 2),
+//   screen and (-webkit-min-device-pixel-ratio: 2),
+//   screen and (-o-min-device-pixel-ratio: 2/1),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
+//     url(../images/hero-mobile@2x.jpg);
+// }
+
+// @include for-size(tablet) {
+//   background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
+//     url("../images/hero-tablet.jpg");
+//   @media screen and (min-device-pixel-ratio: 2),
+//     screen and (-webkit-min-device-pixel-ratio: 2),
+//     screen and (-o-min-device-pixel-ratio: 2/1),
+//     screen and (min-resolution: 192dpi),
+//     screen and (min-resolution: 2dppx) {
+//     background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
+//       url(../images/hero-tablet@2x.jpg);
+//   }
+// }
+// @include for-size(desktop) {
+//   max-width: 1600px;
+//   height: 600px;
+//   background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
+//     url("../images/hero.jpg");
+//   @media screen and (min-device-pixel-ratio: 2),
+//     screen and (-webkit-min-device-pixel-ratio: 2),
+//     screen and (-o-min-device-pixel-ratio: 2/1),
+//     screen and (min-resolution: 192dpi),
+//     screen and (min-resolution: 2dppx) {
+//     background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
+//       url(../images/hero@2x.jpg);
+//   }
+// }

@@ -1,0 +1,48 @@
+.ingredients {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  @include for-size(desktop) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: unset;
+    background-color: $primary-bg-color;
+    background-image: url(../../img/ingredients.png);
+    @include bcg(contain, no-repeat);
+  }
+  &__wrap {
+    margin-bottom: 50px;
+    @include for-size(desktop) {
+      display: none;
+    }
+  }
+  &__container {
+    grid-column: 2/5;
+  }
+  &__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  &__text {
+    color: $secondary-text-color;
+    :first-of-type {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 10px;
+    color: $secondary-text-color;
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 15px;
+      width: 15px;
+      margin-right: 20px;
+      background-color: $form-bg-color;
+      border-radius: 50%;
+      opacity: 0.7;
+    }
+  }
+}

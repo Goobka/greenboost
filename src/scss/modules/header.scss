@@ -1,0 +1,24 @@
+@import "../mixin.scss";
+@import "vars.scss";
+
+.header {
+  font-size: 1rem;
+  text-align: center;
+  min-height: 50px;
+  padding: 10px 0;
+  color: $accent-text-color;
+  background-color: $header-bg-color;
+  &__warn {
+    font-size: 1.5rem;
+    line-height: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $warn-color;
+  }
+  & span {
+    display: block;
+    @include for-size(desktop) {
+      display: inline-block;
+    }
+  }
+}

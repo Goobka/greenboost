@@ -1,0 +1,58 @@
+.advantage {
+  @include for-size(desktop) {
+    background-image: url(../../img/benefits-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0 left 150%;
+  }
+  &__img {
+    @include for-size(desktop) {
+      display: none;
+    }
+  }
+  &__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    @include for-size(desktop) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      text-align: unset;
+    }
+  }
+  &__wrap {
+    @include for-size(desktop) {
+      grid-column: 1 / 4;
+    }
+  }
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    &::before {
+      content: url(../../img/heart.png);
+    }
+  }
+  &__text {
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin-bottom: 50px;
+  }
+  &__item {
+    text-decoration: underline;
+  }
+}
+
+.note {
+  padding: 30px;
+  outline: 2px solid $secondary-text-color;
+  &__info {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    &::before {
+      content: url(../../img/info.png);
+    }
+  }
+}

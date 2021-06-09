@@ -1,0 +1,34 @@
+.order {
+  color: $accent-text-color;
+  background-image: url(../../img/footer-bg.png);
+  background-size: contain;
+  background-position: bottom left;
+  &__container {
+    text-align: center;
+    padding: 30px;
+    @include for-size(desktop) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      text-align: unset;
+    }
+  }
+  &__text {
+    font-size: 2rem;
+    text-transform: uppercase;
+    @include for-size(desktop) {
+      grid-column: 1/4;
+    }
+    & span:first-of-type {
+      font-size: 3rem;
+      font-weight: bold;
+      white-space: wrap;
+      & span {
+        color: $header-accent-color;
+      }
+    }
+  }
+  &__btn {
+    align-self: center;
+    padding: 30px;
+  }
+}

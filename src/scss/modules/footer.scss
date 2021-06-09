@@ -1,0 +1,123 @@
+.footer {
+  text-align: center;
+  padding: 20px 15px 100px 15px;
+  color: $accent-text-color;
+  background-image: url(../../img/footer-bg.png);
+  overflow: hidden;
+  @include for-size(tablet) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  @include for-size(desktop) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  &__text {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  &__title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  &__item {
+    margin-bottom: 10px;
+  }
+  &__wrap {
+    margin-bottom: 60px;
+  }
+  &__nav,
+  &__info {
+    margin-bottom: 20px;
+    @include for-size(desktop) {
+      margin-bottom: 0;
+    }
+  }
+  &__btn {
+    position: relative;
+    padding: 30px;
+    &::before {
+      content: url(../../img/left-arrow.png);
+      position: absolute;
+      right: 220px;
+      bottom: 180px;
+      display: block;
+      height: 50%;
+    }
+    &::after {
+      content: url(../../img/right-arrow.png);
+      @extend .footer__btn::before;
+      left: 200px;
+      bottom: 180px;
+    }
+  }
+  &__content {
+    @include for-size(desktop) {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      text-align: left;
+    }
+  }
+}
+
+.contacts {
+  display: inline-block;
+  font-style: normal;
+  text-align: left;
+  margin-bottom: 20px;
+  @include for-size(desktop) {
+    margin-bottom: 0;
+  }
+  &__list {
+    padding-left: 40px;
+  }
+  & li {
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  &__tel::before {
+    content: url(../../img/telephone.png);
+    position: absolute;
+    left: -40px;
+    display: inline-block;
+    @include for-size(desktop) {
+      margin-right: 10px;
+    }
+  }
+  &__mail::before {
+    content: url(../../img/email.png);
+    @extend .contacts__tel;
+  }
+  &__address::before {
+    content: url(../../img/home.png);
+    top: 25%;
+    @extend .contacts__tel;
+  }
+}
+
+.socials__item {
+  display: inline-block;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  @include for-size(desktop) {
+    display: block;
+  }
+  &:first-of-type {
+    margin-right: 20px;
+    background-color: $facebook-color;
+    background-image: $fb-gradient;
+    @include for-size(desktop) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  &:last-of-type {
+    background-color: $insta-color;
+    background-image: $insta-gradient;
+  }
+}

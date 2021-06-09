@@ -1,0 +1,65 @@
+.form {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: [col1-start] 1fr [col2-start] 1fr [col2-end];
+  &__title {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  &__label {
+    grid-column: col1-start / col2-end;
+    &--zip {
+      grid-column: col1-start;
+    }
+    &--city {
+      grid-column: col2-start;
+    }
+  }
+  &__input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    &::placeholder {
+      opacity: 0.7;
+      transition: $transition;
+    }
+    &:focus {
+      &::placeholder {
+        opacity: 0;
+      }
+    }
+  }
+  &__btn {
+    grid-column: col1-start / col2-end;
+  }
+}
+
+.price {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-bottom: 50px;
+  color: $accent-text-color;
+  &__text {
+    display: inline-block;
+    justify-self: center;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    &:last-of-type {
+      justify-self: flex-start;
+    }
+  }
+  &__number {
+    position: relative;
+    justify-self: flex-start;
+    font-size: 5rem;
+    font-weight: bold;
+  }
+  &__euro {
+    position: absolute;
+    bottom: 10px;
+    font-size: 2.2rem;
+  }
+}

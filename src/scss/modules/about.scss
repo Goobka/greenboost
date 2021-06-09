@@ -1,0 +1,40 @@
+.about {
+  color: $secondary-text-color;
+  @include for-size(desktop) {
+    background-image: url("../../img/about-bg.png");
+    @include bcg(contain, no-repeat);
+  }
+  &__img {
+    @include for-size(desktop) {
+      display: none;
+    }
+  }
+  &__container {
+    text-align: center;
+    padding-bottom: 20px;
+    @include for-size(desktop) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-top: unset;
+      text-align: unset;
+    }
+  }
+  &__content {
+    grid-column: 2/4;
+  }
+  &__title {
+    font-size: 3rem;
+    font-weight: bold;
+    &::before {
+      content: url(../../img/medal-icon.png);
+    }
+  }
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+    & span {
+      font-weight: bold;
+    }
+  }
+}
