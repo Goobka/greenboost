@@ -28,13 +28,6 @@
   &__wrap {
     margin-bottom: 60px;
   }
-  &__nav,
-  &__info {
-    margin-bottom: 20px;
-    @include for-size(desktop) {
-      margin-bottom: 0;
-    }
-  }
   &__btn {
     position: relative;
     padding: 30px;
@@ -62,6 +55,19 @@
   }
 }
 
+.nav,
+.info {
+  margin-bottom: 20px;
+  @include for-size(desktop) {
+    margin-bottom: 0;
+  }
+  &__list {
+    display: none;
+    @include for-size(desktop) {
+      display: unset;
+    }
+  }
+}
 .contacts {
   display: inline-block;
   font-style: normal;
@@ -71,7 +77,11 @@
     margin-bottom: 0;
   }
   &__list {
+    display: none;
     padding-left: 40px;
+    @include for-size(desktop) {
+      display: unset;
+    }
   }
   & li {
     position: relative;

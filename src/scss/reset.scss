@@ -42,6 +42,7 @@ img {
 a {
   display: inline-block;
   color: inherit;
+  cursor: pointer;
 }
 
 a:hover,
@@ -102,10 +103,4 @@ select {
 textarea {
   overflow-y: auto;
   resize: none;
-}
-
-button {
-  background-color: transparent;
-  cursor: pointer;
-  color: currentColor;
 }

@@ -1,10 +1,50 @@
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    @include('form.html');
-        <button class="modal__button" data-modal-close>
-          <svg class="icon-close" width="11" height="11">
-            <use href="./images/sprite.svg#close"></use>
-          </svg>
-        </button>
-        </div>
-        </div>
+    <form class="form" name="modal_form form" autocomplete="on">
+      <label class="form__label">
+        <input class="form__input" type="text" name="name" placeholder="First name" pattern="^[A-Za-zА-Яа-яЁё\s]+$"
+          autocomplete="on" required />
+      </label>
+
+      <label class="form__label">
+        <input class="form__input" type="text" name="last_name" placeholder="Last name" pattern="^[A-Za-zА-Яа-яЁё\s]+$"
+          autocomplete="on" required />
+      </label>
+
+      <label class="form__label">
+        <input class="form__input" type="email" name="email" placeholder="Email address"
+          pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+" autocomplete="on" required />
+      </label>
+
+      <label class="form__label">
+        <input class="form__input" type="tel" name="phone_number" placeholder="Phone number" pattern="^\+?[0-9]{10,12}$"
+          autocomplete="on" required />
+      </label>
+
+      <label class="form__label">
+        <input class="form__input" type="text" name="address" placeholder="Address" autocomplete="on" required />
+      </label>
+
+      <label class="form__label form__label--zip ">
+        <input class="form__input" type="number" name="zip_code" placeholder="Zip code" pattern="^\d{6}$" autocomplete="on"
+          required />
+      </label>
+
+      <label class="form__label form__label--city">
+        <input class="form__input" type="text" name="city" placeholder="City" autocomplete="on" required />
+      </label>
+
+      <label class="form__label">
+        <input class="form__input" type="text" name="state" placeholder="State" autocomplete="on" required />
+      </label>
+
+      <label class="form__label">
+        <input class="form__input" type="text" name="country" placeholder="Country" autocomplete="on" required />
+      </label>
+
+      <button class="form__btn btn" type="submit">Rush my order</button>
+    </form>
+    <button class="modal__button" data-modal-close>
+    </button>
+  </div>
+</div>

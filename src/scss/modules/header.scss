@@ -1,6 +1,3 @@
-@import "../mixin.scss";
-@import "vars.scss";
-
 .header {
   font-size: 1rem;
   text-align: center;
@@ -20,5 +17,10 @@
     @include for-size(desktop) {
       display: inline-block;
     }
+  }
+  & .value {
+    display: inline-block;
+    font-weight: bold;
+    color: $warn-color;
   }
 }

@@ -10,6 +10,12 @@
       display: none;
     }
   }
+  &__btn {
+    margin-bottom: 20px;
+    @include for-size(desktop) {
+      display: none;
+    }
+  }
   &__container {
     text-align: center;
     padding-top: 25px;
@@ -41,14 +47,18 @@
   }
   &__form {
     display: none;
+    background-color: $form-bg-color;
+    background-image: url(../../img/triangle.png);
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-position: left 50% top -50%;
+    text-align: center;
     @include for-size(desktop) {
       display: block;
       max-width: 30%;
-      background-color: $form-bg-color;
-      background-image: url(../../img/triangle.png);
-      background-repeat: no-repeat;
-      background-size: 160%;
-      background-position: left 50% top -20%;
+      background-size: fill;
+      background-position: left 50% top -12%;
+      overflow: hidden;
       padding: 0 20px 30px;
       text-align: center;
     }

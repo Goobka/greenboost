@@ -3,13 +3,14 @@
   @include('modules/link.html',{ 'title': 'Title' })
   <body>
     @include('modules/header.html')
-    <!-- @include('modules/backdrop.html') -->
+    @include('modules/backdrop.html')
 <main>
   <section class="hero">
     <div class="hero__container container">
-      <img class="hero__img img" src="../img/hero-bg.png" alt="oil">
+      <img class="hero__img img" data-lazy="../img/hero-bg.png" alt="oil">
+      <button type="button" class="order__btn btn hero__btn" data-modal-open>Order now</button>
       <div class="hero__content">
-        <a href="#" class="logo"><img class="logo__img" src="../img/logo.png" alt="logo"></a>
+        <a href="#" class="logo"><img class="logo__img" data-lazy="../img/logo.png" alt="logo"></a>
         <h1 class="hero__title">Cbd hemp <span>oil</span></h1>
         <span class="hero__info">Extract 5% (500mg)</span>
         <ul class="assets list">
@@ -37,7 +38,7 @@
 
   <section class="about">
     <div class="about__container container">
-      <img class="about__img img" src="../img/about-bg.png" alt="Plant">
+      <img class="about__img img" data-lazy="../img/about-bg.png" alt="Plant">
       <div class="about__content">
         <h2 class="about__title">The best quailty - Pure nature</h2>
         <p class="about__text">Our hemp oil extract is created from some of the best organically grown hemp in Europe,
@@ -60,13 +61,13 @@
     <div class="order__container container">
       <p class="order__text"><span>Order <span>greenboost</span> oil now </span><br>and be a part of the automatic refill
         program with monthly refill.</p>
-      <button type="button" class="order__btn btn">Order now</button>
+      <button type="button" class="order__btn btn" data-modal-open>Order now</button>
     </div>
   </section>
 
   <section class="advantage">
     <div class="advantage__container container">
-      <img class="advantage__img img" src="../img/benefits-bg.png" alt="Oil">
+      <img class="advantage__img img" data-lazy="../img/benefits-bg.png" alt="Oil">
       <div class="advantage__wrap">
         <h2 class="advantage__title">Wondering what hemp oil can do for you?</h2>
         <p class="advantage__text">Hemp oil has a variety of beneficial effects on your body and mind. We have gathered
@@ -100,7 +101,7 @@
   <section class="ingredients">
     <div class="ingredients__container container">
       <div class="ingredients__wrap">
-        <img class="img" src="../img/ingredients.png" alt="Couple">
+        <img class="img" data-lazy="../img/ingredients.png" alt="Couple">
       </div>
       <p class="ingredients__title">Ingredients</p>
       <p class="ingredients__text">Organic hemp seed oil decarboxylated hemp oil (Decarboxylation is a process that
@@ -129,7 +130,7 @@
     <div class="order__container container">
       <p class="order__text"><span>Order <span>greenboost</span> oil now </span><br>and be a part of the automatic refill
       program with monthly refill.</p>
-      <button type="button" class="order__btn btn">Order now</button>
+      <button type="button" class="order__btn btn" data-modal-open>Order now</button>
     </div>
   </section>
 

@@ -7,26 +7,72 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-   <!--<link rel="icon" href="img/favicon.png" type="image/png"/>-->
+   <link rel="icon" href="img/heart.png" type="image/png" />
    <meta name="description" content="description">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css" />
    <link rel="stylesheet" href="css/style.min.css" />
-   <title>Title</title>
+   <title>Greenboost</title>
 </head>
 
 <body>
    <header class="header">
       <div class="header__container container">
-         <p class="header__text"><span class="header__warn">Warning:</span> Due to extremely high media demand, there is a limited supply of CBD Oil. <span>Get yours NOW!</span> <span>Offer ends in 00:06:00:00</span></p>
+         <p class="header__text"><span class="header__warn">Warning:</span> Due to extremely high media demand, there is a limited supply of CBD Oil. <span>Get yours NOW!</span>Offer ends in <span class="value" data-value="days">00</span>:<span class="value" data-value="hours">00</span>:<span class="value" data-value="mins">00</span>:<span class="value" data-value="secs">00</span></p>
       </div>
    </header>
 
+   <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+         <form class="form" name="modal_form form" autocomplete="on">
+            <label class="form__label">
+               <input class="form__input" type="text" name="name" placeholder="First name" pattern="^[A-Za-zА-Яа-яЁё\s]+$" autocomplete="on" required />
+            </label>
 
+            <label class="form__label">
+               <input class="form__input" type="text" name="last_name" placeholder="Last name" pattern="^[A-Za-zА-Яа-яЁё\s]+$" autocomplete="on" required />
+            </label>
+
+            <label class="form__label">
+               <input class="form__input" type="email" name="email" placeholder="Email address" pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+" autocomplete="on" required />
+            </label>
+
+            <label class="form__label">
+               <input class="form__input" type="tel" name="phone_number" placeholder="Phone number" pattern="^\+?[0-9]{10,12}$" autocomplete="on" required />
+            </label>
+
+            <label class="form__label">
+               <input class="form__input" type="text" name="address" placeholder="Address" autocomplete="on" required />
+            </label>
+
+            <label class="form__label form__label--zip ">
+               <input class="form__input" type="number" name="zip_code" placeholder="Zip code" pattern="^\d{6}$" autocomplete="on" required />
+            </label>
+
+            <label class="form__label form__label--city">
+               <input class="form__input" type="text" name="city" placeholder="City" autocomplete="on" required />
+            </label>
+
+            <label class="form__label">
+               <input class="form__input" type="text" name="state" placeholder="State" autocomplete="on" required />
+            </label>
+
+            <label class="form__label">
+               <input class="form__input" type="text" name="country" placeholder="Country" autocomplete="on" required />
+            </label>
+
+            <button class="form__btn btn" type="submit">Rush my order</button>
+         </form>
+         <button class="modal__button" data-modal-close>
+         </button>
+      </div>
+   </div>
    <main>
       <section class="hero">
          <div class="hero__container container">
-            <img class="hero__img img" src="../img/hero-bg.png" alt="oil">
+            <img class="hero__img img" data-lazy="../img/hero-bg.png" alt="oil">
+            <button type="button" class="order__btn btn hero__btn" data-modal-open>Order now</button>
             <div class="hero__content">
-               <a href="#" class="logo"><img class="logo__img" src="../img/logo.png" alt="logo"></a>
+               <a href="#" class="logo"><img class="logo__img" data-lazy="../img/logo.png" alt="logo"></a>
                <h1 class="hero__title">Cbd hemp <span>oil</span></h1>
                <span class="hero__info">Extract 5% (500mg)</span>
                <ul class="assets list">
@@ -56,39 +102,39 @@
                <p class="form__title">Where should we send your order?</p>
                <form class="form" name="order_form" autocomplete="on">
                   <label class="form__label">
-                     <input class="form__input" type="text" name="name" placeholder="First name" required />
+                     <input class="form__input" type="text" name="name" placeholder="First name" pattern="^[A-Za-zА-Яа-яЁё\s]+$" autocomplete="on" required />
                   </label>
 
                   <label class="form__label">
-                     <input class="form__input" type="text" name="last_name" placeholder="Last name" required />
+                     <input class="form__input" type="text" name="last_name" placeholder="Last name" pattern="^[A-Za-zА-Яа-яЁё\s]+$" autocomplete="on" required />
                   </label>
 
                   <label class="form__label">
-                     <input class="form__input" type="email" name="email" placeholder="Email address" required />
+                     <input class="form__input" type="email" name="email" placeholder="Email address" pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+" autocomplete="on" required />
                   </label>
 
                   <label class="form__label">
-                     <input class="form__input" type="tel" name="phone_number" placeholder="Last name" required />
+                     <input class="form__input" type="tel" name="phone_number" placeholder="Phone number" pattern="^\+?[0-9]{10,12}$" autocomplete="on" required />
                   </label>
 
                   <label class="form__label">
-                     <input class="form__input" type="text" name="address" placeholder="Address" required />
+                     <input class="form__input" type="text" name="address" placeholder="Address" autocomplete="on" required />
                   </label>
 
                   <label class="form__label form__label--zip ">
-                     <input class="form__input" type="number" name="zip_code" placeholder="Zip code" required />
+                     <input class="form__input" type="number" name="zip_code" placeholder="Zip code" pattern="^\d{6}$" autocomplete="on" required />
                   </label>
 
                   <label class="form__label form__label--city">
-                     <input class="form__input" type="text" name="city" placeholder="City" required />
+                     <input class="form__input" type="text" name="city" placeholder="City" autocomplete="on" required />
                   </label>
 
                   <label class="form__label">
-                     <input class="form__input" type="text" name="state" placeholder="State" required />
+                     <input class="form__input" type="text" name="state" placeholder="State" autocomplete="on" required />
                   </label>
 
                   <label class="form__label">
-                     <input class="form__input" type="text" name="country" placeholder="Country" required />
+                     <input class="form__input" type="text" name="country" placeholder="Country" autocomplete="on" required />
                   </label>
 
                   <button class="form__btn btn" type="submit">Rush my order</button>
@@ -99,7 +145,7 @@
 
       <section class="about">
          <div class="about__container container">
-            <img class="about__img img" src="../img/about-bg.png" alt="Plant">
+            <img class="about__img img" data-lazy="../img/about-bg.png" alt="Plant">
             <div class="about__content">
                <h2 class="about__title">The best quailty - Pure nature</h2>
                <p class="about__text">Our hemp oil extract is created from some of the best organically grown hemp in Europe,
@@ -122,13 +168,13 @@
          <div class="order__container container">
             <p class="order__text"><span>Order <span>greenboost</span> oil now </span><br>and be a part of the automatic refill
         program with monthly refill.</p>
-            <button type="button" class="order__btn btn">Order now</button>
+            <button type="button" class="order__btn btn" data-modal-open>Order now</button>
          </div>
       </section>
 
       <section class="advantage">
          <div class="advantage__container container">
-            <img class="advantage__img img" src="../img/benefits-bg.png" alt="Oil">
+            <img class="advantage__img img" data-lazy="../img/benefits-bg.png" alt="Oil">
             <div class="advantage__wrap">
                <h2 class="advantage__title">Wondering what hemp oil can do for you?</h2>
                <p class="advantage__text">Hemp oil has a variety of beneficial effects on your body and mind. We have gathered
@@ -162,7 +208,7 @@
       <section class="ingredients">
          <div class="ingredients__container container">
             <div class="ingredients__wrap">
-               <img class="img" src="../img/ingredients.png" alt="Couple">
+               <img class="img" data-lazy="../img/ingredients.png" alt="Couple">
             </div>
             <p class="ingredients__title">Ingredients</p>
             <p class="ingredients__text">Organic hemp seed oil decarboxylated hemp oil (Decarboxylation is a process that
@@ -191,7 +237,7 @@
          <div class="order__container container">
             <p class="order__text"><span>Order <span>greenboost</span> oil now </span><br>and be a part of the automatic refill
       program with monthly refill.</p>
-            <button type="button" class="order__btn btn">Order now</button>
+            <button type="button" class="order__btn btn" data-modal-open>Order now</button>
          </div>
       </section>
 
@@ -208,7 +254,7 @@
       <span class="footer__text">We do not make any medical claims – Our products are food supplements, it is not intended
     to diagnose, treat, cure or prevent any disease.</span>
       <div class="footer__wrap">
-         <button type="button" class="order__btn btn footer__btn">Order now</button>
+         <button type="button" class="order__btn btn footer__btn" data-modal-open>Order now</button>
       </div>
 
       <div class="footer__content">

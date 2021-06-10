@@ -6,39 +6,98 @@
   <p class="form__title">Where should we send your order?</p>
   <form class="form" name="order_form" autocomplete="on">
     <label class="form__label">
-      <input class="form__input" type="text" name="name" placeholder="First name" required />
+      <input
+      class="form__input"
+      type="text"
+      name="name"
+      placeholder="First name"
+      pattern="^[A-Za-zА-Яа-яЁё\s]+$"
+      autocomplete="on"
+      required />
     </label>
 
     <label class="form__label">
-      <input class="form__input" type="text" name="last_name" placeholder="Last name" required />
+      <input
+      class="form__input"
+      type="text"
+      name="last_name"
+      placeholder="Last name"
+      pattern="^[A-Za-zА-Яа-яЁё\s]+$"
+      autocomplete="on"
+      required />
     </label>
 
     <label class="form__label">
-      <input class="form__input" type="email" name="email" placeholder="Email address" required />
+      <input
+      class="form__input"
+      type="email"
+      name="email"
+      placeholder="Email address"
+      pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+"
+      autocomplete="on"
+      required />
     </label>
 
     <label class="form__label">
-      <input class="form__input" type="tel" name="phone_number" placeholder="Last name" required />
+      <input
+      class="form__input"
+      type="tel"
+      name="phone_number"
+      placeholder="Phone number"
+      pattern="^\+?[0-9]{10,12}$"
+      autocomplete="on"
+      required />
     </label>
 
     <label class="form__label">
-      <input class="form__input" type="text" name="address" placeholder="Address" required />
+      <input
+      class="form__input"
+      type="text"
+      name="address"
+      placeholder="Address"
+      autocomplete="on"
+      required />
     </label>
 
     <label class="form__label form__label--zip ">
-      <input class="form__input" type="number" name="zip_code" placeholder="Zip code" required />
+      <input
+      class="form__input"
+      type="number"
+      name="zip_code"
+      placeholder="Zip code"
+      pattern="^\d{6}$"
+      autocomplete="on"
+      required />
     </label>
 
     <label class="form__label form__label--city">
-      <input class="form__input" type="text" name="city" placeholder="City" required />
+      <input
+      class="form__input"
+      type="text"
+      name="city"
+      placeholder="City"
+      autocomplete="on"
+      required />
     </label>
 
     <label class="form__label">
-      <input class="form__input" type="text" name="state" placeholder="State" required />
+      <input
+      class="form__input"
+      type="text"
+      name="state"
+      placeholder="State"
+      autocomplete="on"
+      required />
     </label>
 
     <label class="form__label">
-      <input class="form__input" type="text" name="country" placeholder="Country" required />
+      <input
+      class="form__input"
+      type="text"
+      name="country"
+      placeholder="Country"
+      autocomplete="on"
+      required />
     </label>
 
     <button class="form__btn btn" type="submit">Rush my order</button>
