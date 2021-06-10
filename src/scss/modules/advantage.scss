@@ -1,14 +1,7 @@
 .advantage {
-  @include for-size(desktop) {
-    background-image: url(../../img/benefits-bg.png);
-    background-repeat: no-repeat;
-    background-position: bottom 0 left 150%;
-  }
-  &__img {
-    @include for-size(desktop) {
-      display: none;
-    }
-  }
+  background-image: url(../img/benefits-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 150%;
   &__container {
     padding-top: 40px;
     padding-bottom: 40px;

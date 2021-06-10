@@ -2,13 +2,13 @@
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
+  background-color: $primary-bg-color;
+  background-image: url(../img/ingredients.png);
+  @include bcg(contain, no-repeat);
   @include for-size(desktop) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-align: unset;
-    background-color: $primary-bg-color;
-    background-image: url(../../img/ingredients.png);
-    @include bcg(contain, no-repeat);
   }
   &__wrap {
     margin-bottom: 50px;

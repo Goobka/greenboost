@@ -1,15 +1,8 @@
 .hero {
   background-color: $primary-bg-color;
-  @include for-size(desktop) {
-    background-image: url(../../img/hero-bg.png);
-    @include bcg(contain, no-repeat);
-    background-position: center;
-  }
-  &__img {
-    @include for-size(desktop) {
-      display: none;
-    }
-  }
+  background-image: url(../img/hero-bg.png);
+  @include bcg(contain, no-repeat);
+  background-position: center;
   &__btn {
     margin-bottom: 20px;
     @include for-size(desktop) {
@@ -48,7 +41,7 @@
   &__form {
     display: none;
     background-color: $form-bg-color;
-    background-image: url(../../img/triangle.png);
+    background-image: url(../img/triangle.png);
     background-repeat: no-repeat;
     background-size: fill;
     background-position: left 50% top -50%;
@@ -81,49 +74,13 @@
     margin-bottom: 5px;
     color: $secondary-text-color;
     &::before {
-      content: url(../../img/check.png);
+      content: url(../img/check.png);
     }
     &--leaf::before {
-      content: url(../../img/leaf.png);
+      content: url(../img/leaf.png);
     }
   }
   &__text {
     font-size: 1.5rem;
   }
 }
-
-// @media screen and (min-device-pixel-ratio: 2),
-//   screen and (-webkit-min-device-pixel-ratio: 2),
-//   screen and (-o-min-device-pixel-ratio: 2/1),
-//   screen and (min-resolution: 192dpi),
-//   screen and (min-resolution: 2dppx) {
-//   background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
-//     url(../images/hero-mobile@2x.jpg);
-// }
-
-// @include for-size(tablet) {
-//   background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
-//     url("../images/hero-tablet.jpg");
-//   @media screen and (min-device-pixel-ratio: 2),
-//     screen and (-webkit-min-device-pixel-ratio: 2),
-//     screen and (-o-min-device-pixel-ratio: 2/1),
-//     screen and (min-resolution: 192dpi),
-//     screen and (min-resolution: 2dppx) {
-//     background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
-//       url(../images/hero-tablet@2x.jpg);
-//   }
-// }
-// @include for-size(desktop) {
-//   max-width: 1600px;
-//   height: 600px;
-//   background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
-//     url("../images/hero.jpg");
-//   @media screen and (min-device-pixel-ratio: 2),
-//     screen and (-webkit-min-device-pixel-ratio: 2),
-//     screen and (-o-min-device-pixel-ratio: 2/1),
-//     screen and (min-resolution: 192dpi),
-//     screen and (min-resolution: 2dppx) {
-//     background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
-//       url(../images/hero@2x.jpg);
-//   }
-// }

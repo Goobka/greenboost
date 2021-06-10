@@ -1,14 +1,7 @@
 .about {
   color: $secondary-text-color;
-  @include for-size(desktop) {
-    background-image: url("../../img/about-bg.png");
-    @include bcg(contain, no-repeat);
-  }
-  &__img {
-    @include for-size(desktop) {
-      display: none;
-    }
-  }
+  background-image: url("../img/about-bg.png");
+  @include bcg(contain, no-repeat);
   &__container {
     text-align: center;
     padding-bottom: 20px;
