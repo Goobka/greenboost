@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <!-- <link rel="icon" href="img/heart.png" type="image/png"/> -->
+   <meta name="description" content="description">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css" />
+   <link rel="stylesheet" href="css/style.min.css" />
+   <title>Greenboost</title>
+</head>
+
+<body>
+   <header class="header">
+      <div class="header__container container">
+         <p class="header__text"><span class="header__warn">Warning:</span> Due to extremely high media demand, there is a limited supply of CBD Oil. <span>Get yours NOW!</span>Offer ends in <span class="value" data-value="days">00</span>:<span class="value" data-value="hours">00</span>:<span class="value" data-value="mins">00</span>:<span class="value" data-value="secs">00</span></p>
+      </div>
+   </header>
+
+   <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+         <form class="form" name="modal_form form" autocomplete="on">
+            <label class="form__label">
+               <input class="form__input" type="text" name="name" placeholder="First name" pattern="^[A-Za-zА-Яа-яЁё\s]+$" autocomplete="on" required />
+            </label>
+
+            <label class="form__label">
+               <input class="form__input" type="text" name="last_name" placeholder="Last name" pattern="^[A-Za-zА-Яа-яЁё\s]+$" autocomplete="on" required />
+            </label>
+
+            <label class="form__label">
+               <input class="form__input" type="email" name="email" placeholder="Email address" pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+" autocomplete="on" required />
+            </label>
+
+            <label class="form__label">
+               <input class="form__input" type="tel" name="phone_number" placeholder="Phone number" pattern="^\+?[0-9]{10,12}$" autocomplete="on" required />
+            </label>
+
+            <label class="form__label">
+               <input class="form__input" type="text" name="address" placeholder="Address" autocomplete="on" required />
+            </label>
+
+            <label class="form__label form__label--zip ">
+               <input class="form__input" type="number" name="zip_code" placeholder="Zip code" pattern="^\d{6}$" autocomplete="on" required />
+            </label>
+
+            <label class="form__label form__label--city">
+               <input class="form__input" type="text" name="city" placeholder="City" autocomplete="on" required />
+            </label>
+
+            <label class="form__label">
+               <input class="form__input" type="text" name="state" placeholder="State" autocomplete="on" required />
+            </label>
+
+            <label class="form__label">
+               <input class="form__input" type="text" name="country" placeholder="Country" autocomplete="on" required />
+            </label>
+
+            <button class="form__btn btn" type="submit">Rush my order</button>
+         </form>
+         <button class="modal__button" data-modal-close>
+         </button>
+      </div>
+   </div>
+   <main>
+      <section class="hero">
+         <div class="hero__container container">
+            <img class="hero__img img" data-lazy="../img/hero-bg.png" alt="oil">
+            <button type="button" class="order__btn btn hero__btn" data-modal-open>Order now</button>
+            <div class="hero__content">
+               <a href="#" class="logo"><img class="logo__img" data-lazy="../img/logo.png" alt="logo"></a>
+               <h1 class="hero__title">Cbd hemp <span>oil</span></h1>
+               <span class="hero__info">Extract 5% (500mg)</span>
+               <ul class="assets list">
+                  <li class="assets__item item">
+                     <p class="assets__title assets__title--leaf">100 % Natural and organic</p>
+                     <p class="assets__text">Lab tested for pesticides, fungicides, herbicides and more, Kosher friendly, vegan,
+                        lactose-free</p>
+                  </li>
+                  <li class="assets__item item">
+                     <p class="assets__title">Relieves pain</p>
+                     <p class="assets__text">Studies have shown that CBD may help reduce chronic pain</p>
+                  </li>
+                  <li class="assets__item item">
+                     <p class="assets__title">Reduces Anxiety
+                        and Depression</p>
+                     <p class="assets__text">CBD oil has shown promise as a treatment for both depression and
+                        anxiety, leading many who live with these disorders to become interested in this
+                        natural approach.</p>
+                  </li>
+               </ul>
+            </div>
+            <div class="hero__form">
+               <div class="price">
+                  <span class="price__text price__text--left">Only</span><span class="price__number">16<span
+        class="price__euro">&euro;</span></span><span class="price__text price__text--right"> +shipment</span>
+               </div>
+               <p class="form__title">Where should we send your order?</p>
+               <form class="form" name="order_form" autocomplete="on">
+                  <label class="form__label">
+                     <input class="form__input" type="text" name="name" placeholder="First name" pattern="^[A-Za-zА-Яа-яЁё\s]+$" autocomplete="on" required />
+                  </label>
+
+                  <label class="form__label">
+                     <input class="form__input" type="text" name="last_name" placeholder="Last name" pattern="^[A-Za-zА-Яа-яЁё\s]+$" autocomplete="on" required />
+                  </label>
+
+                  <label class="form__label">
+                     <input class="form__input" type="email" name="email" placeholder="Email address" pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+" autocomplete="on" required />
+                  </label>
+
+                  <label class="form__label">
+                     <input class="form__input" type="tel" name="phone_number" placeholder="Phone number" pattern="^\+?[0-9]{10,12}$" autocomplete="on" required />
+                  </label>
+
+                  <label class="form__label">
+                     <input class="form__input" type="text" name="address" placeholder="Address" autocomplete="on" required />
+                  </label>
+
+                  <label class="form__label form__label--zip ">
+                     <input class="form__input" type="number" name="zip_code" placeholder="Zip code" pattern="^\d{6}$" autocomplete="on" required />
+                  </label>
+
+                  <label class="form__label form__label--city">
+                     <input class="form__input" type="text" name="city" placeholder="City" autocomplete="on" required />
+                  </label>
+
+                  <label class="form__label">
+                     <input class="form__input" type="text" name="state" placeholder="State" autocomplete="on" required />
+                  </label>
+
+                  <label class="form__label">
+                     <input class="form__input" type="text" name="country" placeholder="Country" autocomplete="on" required />
+                  </label>
+
+                  <button class="form__btn btn" type="submit">Rush my order</button>
+               </form>
+            </div>
+         </div>
+      </section>
+
+      <section class="about">
+         <div class="about__container container">
+            <img class="about__img img" data-lazy="../img/about-bg.png" alt="Plant">
+            <div class="about__content">
+               <h2 class="about__title">The best quailty - Pure nature</h2>
+               <p class="about__text">Our hemp oil extract is created from some of the best organically grown hemp in Europe,
+                  Greenboozt hemp oil extract is one of the highest quality organic hemp oils on the market today. A mix of
+                  organically grown hemp and the latest discoveries in the laboratory ensures that Greenboozt products are of the
+                  highest standards.</p>
+
+               <p class="about__text"><span>GreenBoozt oils are 100% natural and organic.</span>We do not allow the use of any
+                  pesticides, fungicides, herbicides, chemical fertilizers, no genetically modified products or growth hormones
+                  are used anywhere in our production process, it’s just pure nature!</p>
+
+               <p class="about__text"><span>GreenBoozt hemp oil extract is lab tested.</span>We test the oils for, cannabinoids
+                  content, contaminants, dangerous bacteria, mould and funguses, to ensure both safety and quality for our
+                  customer.</p>
+            </div>
+         </div>
+      </section>
+
+      <section class="order">
+         <div class="order__container container">
+            <p class="order__text"><span>Order <span>greenboost</span> oil now </span><br>and be a part of the automatic refill
+        program with monthly refill.</p>
+            <button type="button" class="order__btn btn" data-modal-open>Order now</button>
+         </div>
+      </section>
+
+      <section class="advantage">
+         <div class="advantage__container container">
+            <img class="advantage__img img" data-lazy="../img/benefits-bg.png" alt="Oil">
+            <div class="advantage__wrap">
+               <h2 class="advantage__title">Wondering what hemp oil can do for you?</h2>
+               <p class="advantage__text">Hemp oil has a variety of beneficial effects on your body and mind. We have gathered
+                  information about the usage of the Hemp Oil Extract and have listed the areas that is described to aid your
+                  health in your body. Please <a href="#" class="advantage__link link">click</a>to open and read this guide to see
+                  what areas might help you.</p>
+
+               <ul class="advantage__list list">
+                  <li class="advantage__item">Anxiety / Depression</li>
+                  <li class="advantage__item">Arthritis</li>
+                  <li class="advantage__item">Osteoporosis</li>
+                  <li class="advantage__item">Blood-circulation / muscle cramps</li>
+                  <li class="advantage__item">Headache / Migrane</li>
+                  <li class="advantage__item">Eyes / Retina</li>
+                  <li class="advantage__item">Pregnancy / Morning Sickness</li>
+                  <li class="advantage__item">Breastfeeding</li>
+                  <li class="advantage__item">Gut-health / IBS</li>
+               </ul>
+
+               <div class="advantage__note note">
+                  <p class="note__info">Please note</p>
+                  <p class="note__text">This content is for informational and educational purposes only. It is not intended to
+                     provide medical advice or to take the place of medical advice or treatment from a personal physician. All
+                     viewers of this content are advised to consult their doctors or qualified health professionals regarding
+                     specific health questions.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="ingredients">
+         <div class="ingredients__container container">
+            <div class="ingredients__wrap">
+               <img class="img" data-lazy="../img/ingredients.png" alt="Couple">
+            </div>
+            <p class="ingredients__title">Ingredients</p>
+            <p class="ingredients__text">Organic hemp seed oil decarboxylated hemp oil (Decarboxylation is a process that
+               removes a carboxyl group from a molecule and turns all acidic phytocannabinoids into non-acidic
+               phytocannabinoids). Phytocannabinoids that are naturally occurring in cannabis are in an acidic form.
+               Decarboxylation takes place by two very simple things: Heat and time. The oil is free from pesticides,
+               herbicides, heavy solvents and other toxic substances. This product contains 10 ml. hemp oil extract, there will
+               be under 0.1% THC content in this product.</p>
+            <p class="ingredients__text ingredients__text--link">See this product laboratory test <a href="#" class="ingredients__link">here.</a></p>
+
+            <p class="ingredients__title">Content/Ingredients:</p>
+            <ul class="ingredients__list">
+               <li class="ingredients__item">5% – 500mg.Phytocannabinoids</li>
+               <li class="ingredients__item">This product contains 10 ml. oil</li>
+               <li class="ingredients__item">Hemp oil extract, organic hemp seed oil and phytocannabinoids</li>
+               <li class="ingredients__item">Omega 3 & 6, Vitamin B1, B2, B3, B6, E</li>
+            </ul>
+
+            <p class="ingredients__title">Dosage recommendation:</p>
+            <p class="ingredients__text">5% (each drop is containing: 2.08mg. of CBD = 10-15 drops a day / start with 6 in the
+               morning and 6 before bed</p>
+         </div>
+      </section>
+
+      <section class="order">
+         <div class="order__container container">
+            <p class="order__text"><span>Order <span>greenboost</span> oil now </span><br>and be a part of the automatic refill
+      program with monthly refill.</p>
+            <button type="button" class="order__btn btn" data-modal-open>Order now</button>
+         </div>
+      </section>
+
+      <section class="natural">
+         <div class="container">
+            <h2 class="natural__title">Hemp oil extract is not<br>
+        psychoactive.</h2>
+            <p class="natural__text">This oil is made of non-psychoactive<br> cannabinoid and it will not get<br> you high in any way.
+            </p>
+         </div>
+      </section>
+   </main>
+   <footer class="footer">
+      <span class="footer__text">We do not make any medical claims – Our products are food supplements, it is not intended
+    to diagnose, treat, cure or prevent any disease.</span>
+      <div class="footer__wrap">
+         <button type="button" class="order__btn btn footer__btn" data-modal-open>Order now</button>
+      </div>
+
+      <div class="footer__content">
+         <address class="footer__contacts contacts">
+            <p class="footer__title">Store information</p>
+            <ul class="contacts__list">
+               <li class="contacts__address">Suite 925a, Block 8/9,<br> Europort GX11 1AA<br> Gibralta</li>
+               <li class="contacts__tel"><a href="tel:+442039666587" class="contacts__link link">+44 2039666587</a></li>
+               <li class="contacts__mail"><a href="mailto:sales@greenboozt.com" class="nav-contacts__link link">sales@greenboozt.com</a></li>
+            </ul>
+         </address>
+
+         <nav class="footer__nav nav">
+            <p class="footer__title">My account</p>
+            <ul class="nav__list list">
+               <li class="footer__item">
+                  <a href="#" class="nav__link">- My account</a>
+               </li>
+               <li class="footer__item">
+                  <a href="#" class="nav__link">- Order history</a>
+               </li>
+               <li class="footer__item">
+                  <a href="#" class="nav__link">- My personal info</a>
+               </li>
+            </ul>
+         </nav>
+
+         <div class="footer__info info">
+            <p class="footer__title">Information</p>
+            <ul class="info__list list">
+               <li class="footer__item">
+                  <a href="#" class="info__link">- About us</a>
+               </li>
+               <li class="footer__item">
+                  <a href="#" class="info__link">- Privacy Policy</a>
+               </li>
+               <li class="footer__item">
+                  <a href="#" class="info__link">- Terms and conditions</a>
+               </li>
+            </ul>
+         </div>
+
+         <div class="footer__socials socials">
+            <ul class="socials__list">
+               <li class="socials__item btn"><a href="#" class="socials__link">Facebook</a></li>
+               <li class="socials__item btn"><a href="#" class="socials__link">Instagram</a></li>
+            </ul>
+         </div>
+      </div>
+   </footer>
+   <script defer src="js/main.min.js"></script>
+</body>
+
+</html>
