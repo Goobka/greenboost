@@ -76,14 +76,3 @@ body {
 .hidden {
   display: none;
 }
-
-img {
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: all 500ms linear;
-}
-
-img.appear {
-  transform: translateX(0);
-  opacity: 1;
-}
