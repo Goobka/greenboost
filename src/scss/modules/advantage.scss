@@ -21,7 +21,7 @@
     font-size: 3rem;
     margin-bottom: 50px;
     &::before {
-      content: url(../../img/heart.png);
+      content: url(../img/heart.png);
     }
   }
   &__text {
@@ -45,7 +45,7 @@
     font-size: 2rem;
     margin-bottom: 30px;
     &::before {
-      content: url(../../img/info.png);
+      content: url(../img/info.png);
     }
   }
 }

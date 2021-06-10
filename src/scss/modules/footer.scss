@@ -2,7 +2,7 @@
   text-align: center;
   padding: 20px 15px 100px 15px;
   color: $accent-text-color;
-  background-image: url(../../img/footer-bg.png);
+  background-image: url(../img/footer-bg.png);
   overflow: hidden;
   @include for-size(tablet) {
     padding-right: 20px;
@@ -32,7 +32,7 @@
     position: relative;
     padding: 30px;
     &::before {
-      content: url(../../img/left-arrow.png);
+      content: url(../img/left-arrow.png);
       position: absolute;
       right: 220px;
       bottom: 180px;
@@ -40,7 +40,7 @@
       height: 50%;
     }
     &::after {
-      content: url(../../img/right-arrow.png);
+      content: url(../img/right-arrow.png);
       @extend .footer__btn::before;
       left: 200px;
       bottom: 180px;
@@ -90,7 +90,7 @@
     }
   }
   &__tel::before {
-    content: url(../../img/telephone.png);
+    content: url(../img/telephone.png);
     position: absolute;
     left: -40px;
     display: inline-block;
@@ -99,11 +99,11 @@
     }
   }
   &__mail::before {
-    content: url(../../img/email.png);
+    content: url(../img/email.png);
     @extend .contacts__tel;
   }
   &__address::before {
-    content: url(../../img/home.png);
+    content: url(../img/home.png);
     top: 25%;
     @extend .contacts__tel;
   }
